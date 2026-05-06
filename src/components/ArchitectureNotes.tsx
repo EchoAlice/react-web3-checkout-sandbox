@@ -1,7 +1,13 @@
 export function ArchitectureNotes() {
   return (
     <section className="card notes">
-      <h2>Architecture notes</h2>
+      <details>
+        <summary>
+          <span>Architecture notes</span>
+          <span className="chevron" aria-hidden="true">
+            ▾
+          </span>
+        </summary>
 
       <h3>Local UI state</h3>
       <ul>
@@ -50,6 +56,7 @@ export function ArchitectureNotes() {
           server is the source of truth on retry — not a stale client cache.
         </li>
       </ul>
+      </details>
     </section>
   );
 }

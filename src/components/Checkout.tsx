@@ -48,12 +48,14 @@ export function Checkout() {
           <p className="status status-failed">
             Failed: {checkout.reason}
           </p>
-          <button onClick={() => void actions.startCheckout(checkout.planId)}>
-            Retry
-          </button>
-          <button className="link" onClick={actions.resetCheckout}>
-            Cancel
-          </button>
+          <div className="actions">
+            <button onClick={() => void actions.startCheckout(checkout.planId)}>
+              Retry
+            </button>
+            <button className="link" onClick={actions.resetCheckout}>
+              Cancel
+            </button>
+          </div>
         </div>
       ) : null}
     </section>

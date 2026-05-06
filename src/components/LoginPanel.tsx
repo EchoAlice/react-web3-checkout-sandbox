@@ -54,7 +54,7 @@ export function LoginPanel() {
   };
 
   return (
-    <section className="card">
+    <section className="card login">
       <h2>Sign in</h2>
       <p className="muted">
         Fake email + OTP. The demo OTP is shown in the error if you enter the
